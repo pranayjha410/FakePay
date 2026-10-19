@@ -50,9 +50,9 @@ db.exec(`
 
 if (db.prepare('SELECT COUNT(*) c FROM shows').get().c === 0) {
   const ins = db.prepare('INSERT INTO shows (title, venue, starts_at, price) VALUES (?,?,?,?)');
-   ins.run('Deccan Express 11007', 'Pune → Mumbai CSMT · AC Chair Car', '2026-11-02 08:30 PM', 450);
-  ins.run('Intercity Express 12127', 'Pune → Mumbai CSMT · AC Chair Car', '2026-11-03 06:15 AM', 520);
-  ins.run('Shatabdi Express 12027', 'Pune → Mumbai CSMT · Executive', '2026-11-04 05:00 PM', 780);;
+  ins.run('Midnight Express (Sci-Fi)', 'Screen 1, PVR Pune', '2026-11-02 19:30', 250);
+  ins.run('Laugh Riot Live (Comedy)', 'Auditorium, Mumbai', '2026-11-05 20:00', 400);
+  ins.run('Rock Night 2026 (Concert)', 'Open Arena, Bengaluru', '2026-11-08 18:00', 600);
 }
 
 const q = {

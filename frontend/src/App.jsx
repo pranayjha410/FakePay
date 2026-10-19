@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import "./App.css";
+
 const ROWS = ['A', 'B', 'C', 'D', 'E'];
 const COLS = [1, 2, 3, 4, 5, 6, 7, 8];
 const idFromUrl = () => window.location.pathname.match(/^\/booking\/([\w-]+)$/)?.[1] ?? null;
